@@ -55,8 +55,6 @@ SX_PHARMACY_MANAGEMENT/
 └── .gitignore
 ```
 
-**Nota:** O ficheiro `farmacia.db` é criado automaticamente quando a aplicação é executada pela primeira vez.
-
 ## 6. Requisitos do Sistema
 
 - Windows, Linux ou macOS.
@@ -70,7 +68,7 @@ Não é necessária a instalação de bibliotecas externas, pois o projecto util
 **Passo 1:** Clonar o repositório:
 
 ```bash
-git clone https://github.com/SEU_UTILIZADOR/SX_PHARMACY_MANAGEMENT.git
+git clone https://github.com/sheltonmateulane654-svg/SX_PHARMACY_MANAGEMENT.git
 ```
 
 **Passo 2:** Entrar na pasta:
