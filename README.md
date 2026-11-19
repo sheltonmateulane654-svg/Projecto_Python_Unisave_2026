@@ -1,83 +1,123 @@
-
 # SX PHARMACY MANAGEMENT
+### Sistema de Gestão de Farmácia
 
-**SX TECH & DESIGN**
+**Desenvolvido em Python | Tkinter | SQLite**
 
-## 1. Introdução
+## 1. Descrição do Projecto
 
-O SX PHARMACY MANAGEMENT é um sistema desenvolvido em Python para auxiliar na gestão administrativa de uma farmácia.
+O **SX PHARMACY MANAGEMENT** é um sistema de gestão de farmácia desenvolvido em Python, com o objectivo de facilitar e melhorar o controlo das actividades diárias de uma farmácia.
 
-## 2. Objectivos
+O sistema permite gerir medicamentos, controlar o stock, registar compras e vendas, acompanhar datas de validade e consultar o histórico de operações.
 
-- Gerir medicamentos e produtos.
-- Controlar entradas e saídas de stock.
-- Registar compras e vendas.
-- Acompanhar datas de validade.
-- Consultar o histórico de operações.
-- Identificar produtos com stock baixo.
+A aplicação possui uma interface gráfica desenvolvida com Tkinter e utiliza SQLite para armazenar os dados localmente.
 
-## 3. Tecnologias utilizadas
+## 2. Objectivos do Projecto
 
-- Python 3
-- Tkinter
-- SQLite
-- Git
-- GitHub
-- Visual Studio Code
+- Desenvolver uma aplicação de gestão de farmácia utilizando Python.
+- Facilitar o registo e a consulta de medicamentos.
+- Melhorar o controlo de entradas e saídas de stock.
+- Automatizar o registo de compras e vendas.
+- Acompanhar os preços e as datas de validade dos medicamentos.
+- Gerar relatórios para facilitar a consulta das operações.
 
-## 4. Funcionalidades
+## 3. Funcionalidades
 
-1. Dashboard.
-2. Cadastro de medicamentos.
-3. Pesquisa de produtos.
-4. Gestão de compras.
-5. Gestão de vendas.
-6. Controlo de validade.
-7. Alertas de stock.
-8. Histórico de operações.
+- **Painel principal:** apresenta indicadores gerais da farmácia.
+- **Gestão de medicamentos:** permite cadastrar, editar, pesquisar e eliminar medicamentos.
+- **Gestão de stock:** controla as quantidades disponíveis e os níveis mínimos.
+- **Registo de compras:** regista a entrada de medicamentos e actualiza o stock.
+- **Registo de vendas:** regista vendas e actualiza automaticamente as quantidades.
+- **Controlo de validade:** permite acompanhar medicamentos próximos do vencimento.
+- **Alertas:** identifica produtos com stock baixo ou esgotado.
+- **Histórico:** apresenta os movimentos de compras e vendas.
+- **Recibos:** permite guardar comprovativos das vendas.
+- **Exportação CSV:** permite exportar listas de medicamentos e históricos.
 
-## 5. Estrutura do projecto
+## 4. Tecnologias Utilizadas
+
+| Tecnologia | Utilização |
+|---|---|
+| Python 3 | Linguagem de programação |
+| Tkinter | Desenvolvimento da interface gráfica |
+| SQLite | Gestão da base de dados |
+| CSV | Exportação de relatórios |
+| Visual Studio Code | Ambiente de desenvolvimento |
+| Git e GitHub | Controlo de versões e alojamento do projecto |
+
+## 5. Estrutura do Projecto
 
 ```text
 SX_PHARMACY_MANAGEMENT/
+│
 ├── main.py
+├── farmacia.db
 ├── README.md
-├── requirements.txt
-├── .gitignore
-├── GUIA_EXECUCAO.md
-└── ROTEIRO_DEFESA_5_MINUTOS.md
+└── .gitignore
 ```
 
-## 6. Instalação
+**Nota:** O ficheiro `farmacia.db` é criado automaticamente quando a aplicação é executada pela primeira vez.
 
-Instalar Python 3 e abrir a pasta do projecto no Visual Studio Code.
+## 6. Requisitos do Sistema
 
-Executar:
+- Windows, Linux ou macOS.
+- Python 3.10 ou superior.
+- Visual Studio Code (recomendado).
+
+Não é necessária a instalação de bibliotecas externas, pois o projecto utiliza módulos incluídos no Python.
+
+## 7. Como Executar o Projecto
+
+**Passo 1:** Clonar o repositório:
+
+```bash
+git clone https://github.com/SEU_UTILIZADOR/SX_PHARMACY_MANAGEMENT.git
+```
+
+**Passo 2:** Entrar na pasta:
+
+```bash
+cd SX_PHARMACY_MANAGEMENT
+```
+
+**Passo 3:** Executar a aplicação:
 
 ```bash
 python main.py
 ```
 
-## 7. Base de dados
+## 8. Base de Dados
 
-O sistema utiliza SQLite para armazenar medicamentos, stocks e transacções.
+O sistema utiliza SQLite para armazenar as informações da farmácia.
 
-O ficheiro da base de dados é criado automaticamente.
+A base de dados contém tabelas destinadas a:
 
-## 8. Público-alvo
+- Produtos e medicamentos.
+- Compras e vendas.
+- Movimentos de stock.
+- Informações de preços e validade.
 
-O sistema foi concebido como protótipo académico de apoio à gestão administrativa de farmácias.
+Os dados são armazenados localmente, permitindo que continuem disponíveis depois de fechar e abrir a aplicação.
 
-## 9. Limitações
+## 9. Segurança e Limitações
 
-O sistema não substitui profissionais de saúde, avaliação farmacêutica, prescrição ou validação legal. Não deve ser utilizado como sistema farmacêutico comercial sem testes, segurança e conformidade regulamentar.
+- O sistema verifica a disponibilidade de stock antes de registar uma venda.
+- Impede a venda de medicamentos com validade expirada.
+- Identifica medicamentos que exigem receita.
+- Os dados são armazenados numa base de dados local.
+- Os preços apresentados são referências e devem ser confirmados junto dos fornecedores.
+- A aplicação é um projecto académico e não substitui um sistema certificado nem a validação de um profissional farmacêutico.
 
-## 10. Autores
+## 10. Autor e Desenvolvimento
 
-Grupo de quatro estudantes.
+**Projecto:** SX PHARMACY MANAGEMENT  
+**Marca de desenvolvimento:** SX TECH & DESIGN  
+**Linguagem:** Python  
+**Área:** Informática e Sistemas de Gestão  
+**Finalidade:** Projecto académico
 
-Universidade Save (UniSave).
+---
 
-## 11. Licença
+### SX TECH & DESIGN
+*Tecnologia, inovação e soluções digitais.*
 
-Projecto académico desenvolvido para fins educativos, feito por Shelton Xvier Mateulane (CEO da SX Solutions).
+**© 2026 — Todos os direitos reservados.**
